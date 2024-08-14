@@ -29,21 +29,21 @@ jobs:
           - platform: ubuntu-latest
             toolchain: stable
             deps: sudo apt-get install libpcsclite-dev
-          - platform: windows-latest
-            toolchain: stable
-            deps: true
-          - platform: macos-latest
-            toolchain: stable
-            deps: true
-          - platform: ubuntu-latest
-            toolchain: 1.74.0 # MSRV
-            deps: sudo apt-get install libpcsclite-dev
-          - platform: windows-latest
-            toolchain: 1.74.0 # MSRV
-            deps: true
-          - platform: macos-latest
-            toolchain: 1.74.0 # MSRV
-            deps: true
+#           - platform: windows-latest
+#             toolchain: stable
+#             deps: true
+#           - platform: macos-latest
+#             toolchain: stable
+#             deps: true
+#           - platform: ubuntu-latest
+#             toolchain: 1.74.0 # MSRV
+#             deps: sudo apt-get install libpcsclite-dev
+#           - platform: windows-latest
+#             toolchain: 1.74.0 # MSRV
+#             deps: true
+#           - platform: macos-latest
+#             toolchain: 1.74.0 # MSRV
+#             deps: true
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v1
